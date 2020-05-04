@@ -43,3 +43,17 @@ logo.setAttribute('src', siteContent["nav"]["img-src"])
 
 //Task1
 //Create selectors by using any of the DOM element's methods
+
+const navsNames = {
+  nav1: 'Services',
+  nav2: 'Product',
+  nav3: 'Vision',
+  nav4: 'Features',
+  nav5: 'About',
+  nav6: 'Contact'
+}
+const keys = Object.keys(navsNames)
+
+document.querySelectorAll('a').forEach((a, idx) => {
+  a.textContent = navsNames[keys[idx]]
+})
