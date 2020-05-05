@@ -64,5 +64,39 @@ theH1.textContent = siteContent["cta"]["h1"];
 const theButton = document.querySelector('button');
 theButton.textContent = siteContent["cta"]["button"];
 
+const topText = document.querySelectorAll('.top-content .text-content');
+const h4TopText = topText[0].querySelector('h4');
+h4TopText.textContent = siteContent["main-content"]["features-h4"];
+
+
+const h4TopText2 = topText[1].querySelector('h4');
+h4TopText2.textContent = siteContent["main-content"]["about-h4"];
+
+const topText1 = topText[0].querySelector('p');
+topText1.textContent = siteContent["main-content"]["features-content"];
+
+const topText2 = topText[1].querySelector('p');
+topText2.textContent = siteContent["main-content"]["about-content"];
+
+const bottomText = document.querySelectorAll('.bottom-content .text-content');
+const bottomText1 = bottomText[0].querySelector('h4');
+bottomText1.textContent = siteContent["main-content"]["services-h4"];
+
+const bottomText2 = bottomText[1].querySelector('h4');
+bottomText2.textContent = siteContent["main-content"]["product-h4"];
+
+const bottomText3 = bottomText[2].querySelector('h4');
+bottomText3.textContent = siteContent["main-content"]["vision-h4"];
+
+const bottomText1P = bottomText[0].querySelector('p');
+bottomText1P.textContent = siteContent["main-content"]["services-content"];
+
+const bottomText2P = bottomText[1].querySelector('p');
+bottomText2P.textContent = siteContent["main-content"]["product-content"];
+
+const bottomText3P = bottomText[2].querySelector('p');
+bottomText3P.textContent = siteContent["main-content"]["vision-content"];
+
+
 
 
