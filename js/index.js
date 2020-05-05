@@ -57,3 +57,12 @@ const keys = Object.keys(navsNames)
 document.querySelectorAll('a').forEach((a, idx) => {
   a.textContent = navsNames[keys[idx]]
 })
+
+const theH1 = document.querySelector('h1');
+theH1.textContent = siteContent["cta"]["h1"];
+
+const theButton = document.querySelector('button');
+theButton.textContent = siteContent["cta"]["button"];
+
+
+
