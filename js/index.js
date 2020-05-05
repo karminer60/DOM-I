@@ -39,19 +39,19 @@ const siteContent = {
 
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
-logo.setAttribute('src', siteContent["nav"]["img-src"])
+logo.setAttribute('src', siteContent["nav"]["img-src"]);
 
-//Task1
+//Task 1-Task 3
 //Create selectors by using any of the DOM element's methods
 
-const navsNames = {
-  nav1: 'Services',
-  nav2: 'Product',
-  nav3: 'Vision',
-  nav4: 'Features',
-  nav5: 'About',
-  nav6: 'Contact'
-}
+let headerImage = document.getElementById("cta-img");
+headerImage.setAttribute('src', siteContent["cta"]["img-src"]);
+
+let middleImage = document.getElementById("middle-img");
+middleImage.setAttribute('src', siteContent["main-content"]["middle-img-src"]);
+
+
+const navsNames = siteContent.nav
 const keys = Object.keys(navsNames)
 
 document.querySelectorAll('a').forEach((a, idx) => {
